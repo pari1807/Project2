@@ -35,12 +35,14 @@ body{
    /* background-image: url('call-bg.png');*/
     /*background-size: 300px;*/
 }
+
 .banner-text{
     color: white;
     padding: 15px 30px;
     text-align: center;
 
 }
+
 .main-nav{
     display: flex;
     align-items: center;
@@ -225,7 +227,7 @@ select{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 35px;
     cursor: pointer;
 }
 .Product-section img{
@@ -253,7 +255,7 @@ select{
 }
 .boxes{
     width: 380px;
-    height: 583px;
+    height: 620px;
     padding: 0px 15px;
     border: 2px solid grey;
     box-shadow: 3px 3px 3px 3px grey;
@@ -263,7 +265,7 @@ select{
 }
 .product-box{
     margin-top: 15px;
-    margin-left: 105px;
+    margin-left: 100px;
     margin-right: 0px;
     display: flex;
     gap: 20px;
@@ -277,6 +279,9 @@ select{
 .product-box img:hover{
     transform: scale(1.1);
     
+}
+.content-4-right1 img:hover{
+    transform: scale(1.1);
 }
 .bid p,h4{
     font-size: 20px;
@@ -378,7 +383,7 @@ select{
         border-radius: 25px;
         background-color: white;
         width: 1100px;
-        height: 750px;
+        height: n750px;
         z-index: 1;
         text-align: center;
         justify-content: center;
@@ -387,16 +392,153 @@ select{
     .product-box-content4{
         display: flex;
         justify-content: space-between;
-        background-image: url('real-bg.png');
+        /* background-image: url('real-bg.png'); */
     }
     .content-4-right{
         width: 632px;
         height: 405px;
-        margin-top:  30px;
+        margin-top:  12px;
     }
     .content-4-left{
-        margin: 65px 20px 20px 65px;
+        margin: 25px;
+        color: white;
     }
+    .xcv{
+        margin: 25px;
+        font-size: xx-large;
+        text-decoration: underline;
+    }
+    .bnn{
+        color: black;
+        margin: 10px;
+    }
+    .bid-left1 {
+        color: black;
+    }
+    .bid-right1{
+        color: black;
+    }
+    .flex1{
+        /* margin: 35px 25px 25px 25px;
+        box-shadow: 3px 3px 3px 3px grey;
+        height: 250px; */
+        width: auto;
+    height: 240px;
+    padding: 0px 15px 10px 15px;
+    border: 2px solid grey;
+    box-shadow: 3px 3px 3px 3px grey;
+    border-radius: 20px;
+    margin: 10px 10px 50px 10px;
+
+    }
+    .flex2{
+        width: auto;
+    height: 420px;
+    padding: 0px 15px 10px 15px;
+    border: 2px solid grey;
+    box-shadow: 3px 3px 3px 3px grey;
+    border-radius: 20px;
+    margin: 10px 10px 50px 10px;
+
+    }
+    .flex{
+        /* margin: 35px 25px 25px 25px;
+        box-shadow: 3px 3px 3px 3px grey;
+        height: 250px; */
+        width: auto;
+    height: 420px;
+    padding: 0px 15px 10px 15px;
+    border: 2px solid grey;
+    box-shadow: 3px 3px 3px 3px grey;
+    border-radius: 20px;
+    margin: 10px 10px 50px 10px;
+
+    }
+    .bid-button1{
+        border: 2px solid  rgb(73,73,220);
+        border-radius: 30px;
+        background-color: rgb(73,73,220);
+        box-shadow: 3px 3px 3px 3px #183b56;
+        padding: 12px 38px 8px;
+        margin: 10px 10px 10px 10px;
+        line-height: 100px;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        
+    
+    }
+    .bid-button1:hover{
+        background-color: white;
+        color: orangered;
+        cursor: pointer;
+    }
+    .view-button1{
+        border: 2px solid  rgb(73,73,220);
+        border-radius: 30px;
+        background-color: white;
+        box-shadow: 3px 3px 3px 3px #183b56;
+        padding: 12px 38px 8px;
+        margin: 10px 10px 10px 10px;
+        line-height: 100px;
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+    
+    
+    }
+    .view-button1:hover{
+        color: white;
+        cursor: pointer;
+        background-image: linear-gradient(rgb(73,73,220),rgb(95, 95, 167));
+    }
+    .link{
+        text-decoration: none;
+        color: black;
+    }
+    .link:hover{
+        color: white;
+        cursor: pointer;
+    }
+    .link1{
+        text-decoration: none;
+        color: black;
+        margin: 10px 45px;
+    }
+    .link1:hover{
+        color: white;
+        cursor: pointer;
+    }
+    .view-button2{
+        border: 2px solid  rgb(73,73,220);
+        border-radius: 30px;
+        background-color: white;
+        box-shadow: 3px 3px 3px 3px #183b56;
+        padding: 12px 38px 8px;
+        margin: 10px 10px 10px 10px;
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+    
+    
+    }
+    .view-button2:hover{
+        color: white;
+        cursor: pointer;
+        background-image: linear-gradient(rgb(73,73,220),rgb(95, 95, 167));
+    }
+    .content-4-right1 img{
+        margin: 50px 15px 20px 15px  ;
+        height: 350px;
+        width: 440px;
+    }
+    .content-4-right2 img{
+        margin: 15px 15px 20px 15px  ;
+        height: 220px;
+        width: 440px;
+    }
+    
+
     .How-it-works{
         border-radius: 30px;
         padding: 60px;
@@ -453,14 +595,7 @@ select{
         margin-top: 50px;
         justify-content: space-between;
     }
-    .container1{
-        background-color: white;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); 
-        max-width: 1180px;
-        margin-inline: 100px;
-        padding-inline: 20px;
-        margin-bottom: 65px;
-    }
+    
     .container1 .foot-panel1-right .e-mail{
         border-radius: 35px;
         width: 65%;
@@ -507,12 +642,6 @@ select{
         text-decoration: line;
         color: red;
         cursor: pointer;
-    }
-    #follow-links{
-        font-size: 2rem;
-    }
-    #follow-links a:hover{
-        color: orangered;
     }
     .back-to-top h2:hover{
         color: orangered;

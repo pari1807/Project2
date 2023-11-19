@@ -9,6 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@500&family=Roboto:ital,wght@0,300;0,700;1,500&display=swap" rel="stylesheet">
+<script>
+        function changePage() {
+          var dropdown = document.getElementById("links");
+          var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+    
+          // Check if a valid option is selected
+          if (selectedValue) {
+            // Redirect to the selected page
+            window.location.href = selectedValue;
+          }
+        }
+        function changePage() {
+            var dropdown = document.getElementById("pages");
+            var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+      
+            // Check if a valid option is selected
+            if (selectedValue) {
+              // Redirect to the selected page
+              window.location.href = selectedValue;
+            }
+          }
+</script>
 </head>
 <body>
 <div class="top-banner">
@@ -17,7 +39,7 @@
     </div>
 </div>
     <div class="background-image">
-        <div class="container main-nav">
+        <div class="container main-nav">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
             <a href="#" class="company-logo">
                 <img src="logo2.jpg" alt="company_logo">
             </a>
@@ -25,19 +47,19 @@
         <div class="nav-links"> 
             <ul style="color: white;">
                 <li><a href="#" class="hover-links">
-                    <select class="select-btn">
+                    <select id="links" class="select-btn" onchange="changePage()">
                         <option value="Pages"><button class="language-btn">Home <img src="C:\Users\parit\OneDrive\Documents\Desktop\Project2\down-icon.png" alt="down"></button></option>
-                        <option value="Pages">MyProfile</option>
-                        <option value="Pages">Dashboard</option>
+                        <option value="profile.html">MyProfile</option>
+                        <option value="dashboard.html">Dashboard</option>
                         <option value="Pages">About us</option>
                         <option value="Pages">Contact</option>
                         <option value="Pages">Faqs</option>
                     </select></a></li>
                 <li><a href="#" class="hover-links">
-                    <select class="select-btn">
+                    <select id="pages" class="select-btn" onchange="changePage()">
                         <option value="Auction"><button class="auction-btn">Auction <img src="C:\Users\parit\OneDrive\Documents\Desktop\Project2\down-icon.png" alt="down"></button></option>
-                        <option value="Auction">Real Estate</option>
-                        <option value="Auction">Jeweller</option>
+                        <option value="">Real Estate</option>
+                        <option value="">Jeweller</option>
                         <option value="Auction">Watches</option>
                         <option value="Auction">Electronics</option>
                         <option value="Auction">Sports</option>
@@ -47,7 +69,7 @@
                 <li><a href="#" class="hover-links">Products</a></li>
                 <li><a href="#" class="hover-links">Resources</a></li>
                
-                <li><a href="#" class="hover-links primary-button">Sign In/Up </a></li>
+                <li><a href="login.html" class="hover-links primary-button" target="_blank_">Sign In </a></li>
             </ul> 
         </div>
         </div>
@@ -66,10 +88,6 @@
     </div>
     <section class="categorizing container">
         <h2>Browse the highlights</h2>
-        <div class="arrows">
-                <i class="fa-solid fa-arrow-left-long fa-2xl"></i>
-                <i class="fa-solid fa-arrow-right-long fa-2xl"></i>
-        </div>
     </section>
 
     <div class="section-boxes container">
@@ -429,7 +447,7 @@
             <h1>COINS & BULLION</h1>
             <p>Discover rare, foreign, & ancient coins that are worth collecting</p>
         </div>
-        <div class="product-section-right">
+        <div class="product-section-right">`
             <button><h2>View All</h2></button>
         </div>
     </div>
@@ -637,15 +655,56 @@
         </div>
     </div>
 
-    <footer1 class="container">
+    <footer1 class="container1">
         <div class="foot-panel1-left ">
             <img src="newslater.png" alt="#">
         </div>
         <div class="foot-panel1-right" style="padding: 90px;">
             <h3 style="color: blue;">Subscribe to MyAuctionBid</h3><br>
             <h1>To Get Exclusive Benefits</h1><br>
-            <input type="e-mail" placeholder="Enter your Email"> <button class="register-btn">Submit</button>
+            <input type="e-mail" placeholder="Enter your Email" class="e-mail"> <button class="register-btn">Submit</button>
         </div>
     </footer1>
+    <div class="back-to-top">
+        <h2>Back to Top</h2>
+    </div>
+    <footer>
+        <div class="footer-panel1 container">
+            <ul>
+                <li><h2>Auction Categories</h2></li>
+                <li><a href="#">Ending Now</a></li>
+                <li><a href="#">Vehicles</a></li>
+                <li><a href="#">Watches</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Real Estate</a></li>
+                <li><a href="jwellery.html">Jewelry</a></li>
+                <li><a href="#">Art</a></li>
+                <li><a href="#">Sports & Outdoor</a></li>
+            </ul>
+            <ul>
+                <li><h2>About us</h2></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Our Blog</a></li>
+            </ul>
+            <ul>
+                <li><h2>We're Here to Help</h2></li>
+                <li><a href="profile.html" taarget="_blank_">Your Account</a></li>
+                <li><a href="#">Safe and Secure</a></li>
+                <li><a href="#">Shipping Information</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Help & FAQ</a></li>
+            </ul>
+            <ul id="follow-links">
+                <h4>Follow us</h4>
+                <a href="https://www.facebook.com/paritosh.pradhan.790"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/paritosh_1807/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/paritoshrahul6"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/paritosh-pradhan-40544b280/"><i class="fa-brands fa-linkedin"></i></a>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
